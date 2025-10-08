@@ -1,0 +1,154 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  overflow-x: hidden;
+}
+
+/* INTRO */
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#intro-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  filter: brightness(0.4);
+}
+
+.intro-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.intro-content h1 {
+  font-size: 5em;
+  letter-spacing: 5px;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+/* MAIN CONTENT */
+.hidden { display: none; }
+
+.hero {
+  height: 100vh;
+  background: url('https://images7.alphacoders.com/131/1319003.jpeg') no-repeat center center/cover;
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 40%;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.btn {
+  background: #ff0000;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b30000;
+}
+
+/* CHARACTERS */
+.characters {
+  padding: 50px;
+  background: #111;
+}
+
+.characters h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #ff0000;
+}
+
+/* STORY */
+.story {
+  padding: 60px;
+  text-align: center;
+  background: #000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
