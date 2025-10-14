@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const intro = document.getElementById('intro');
   const mainContent = document.getElementById('main-content');
 
+  const video = document.getElementById('intro-video');
+video.playbackRate = 0.5;
   thunderSound.play();
 
   setTimeout(() => {
